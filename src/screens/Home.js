@@ -62,10 +62,11 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className='container'> {/* boootstrap is mobile first */}
+      <div className='container extra'> {/* boootstrap is mobile first */}
         {
           foodCat !== []
             ? foodCat.map((data) => {
+              console.log(data);
               return (
                 // justify-content-center
                 <div className='row mb-3'>
@@ -86,7 +87,7 @@ export default function Home() {
                 </div>
               )
             })
-            : ""}
+            : <h1>ERROR PAGE</h1>}
       </div>
       <Footer />
     </div>

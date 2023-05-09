@@ -1,5 +1,27 @@
+:root{
+  --planCard: red;
+}
+
 .App {
   text-align: center;
+  
+}
+/* .container{
+  background-color: var(--planCard);
+} */
+
+.extra{
+  background-color: var(--planCard);
+  z-index: -9;
+}
+.blur-f1{
+  bottom: 0rem;
+  right: 15%;
+  width: 25rem;
+  height: 12rem;
+  filter: blur(200px);
+  background: red;
+  z-index: -9;
 }
 
 .App-logo {
